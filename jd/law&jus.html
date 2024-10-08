@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+        font-family: 'Roboto', sans-serif;
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 20px;
+     
+    }
+    .container {
+      padding-top: 50px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+    }
+    h2 {
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: black;
+      text-decoration:underline;
+      padding: 10px;
+      margin-top: 30px;
+      border-radius: 5px;
+    }
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left: 30%;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+    #additional-content {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-left: 30%; 
+  }
+
+  .read-more-btn{
+
+    background-color: #fddd33;
+    color:black;
+  padding: 4px 20px;
+  border-radius: 20px;
+  margin-left: 30%;
+  }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+  <title>LegalIndia</title>
+  
+  
+  
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+</head>
+<body>
+    <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <svg  style="height: 70px; width: 70px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-57.703" y1="108.736" x2="391.891" y2="550.837"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#a)" d="M205.078 280.968v-16.731a2.5 2.5 0 0 0-2.5-2.5H25.204a2.5 2.5 0 0 0-2.5 2.5v16.731c0 14.209 11.56 25.769 25.769 25.769h130.836c14.209-.001 25.769-11.56 25.769-25.769zm-177.374 0v-14.231h172.375v14.231c0 11.452-9.317 20.769-20.769 20.769H48.473c-11.452-.001-20.769-9.317-20.769-20.769z"/><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-33.459" y1="84.082" x2="416.135" y2="526.182"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#b)" d="m102.939 155.138-10.108 18.376a2.5 2.5 0 0 0 4.381 2.411l10.108-18.376a7.5 7.5 0 0 1 13.142 0l48.413 88.015c.965 1.755 1.189 3.781.631 5.705s-1.833 3.515-3.588 4.48a7.511 7.511 0 0 1-3.605.931 7.509 7.509 0 0 1-6.581-3.888l-39.65-72.085a2.5 2.5 0 0 0-4.38 0l-39.65 72.085c-1.994 3.624-6.564 4.95-10.187 2.957-1.755-.966-3.029-2.557-3.588-4.48s-.334-3.95.631-5.705l21.555-39.187a2.5 2.5 0 0 0-4.381-2.411l-21.555 39.187a12.418 12.418 0 0 0-1.052 9.509 12.42 12.42 0 0 0 5.98 7.468c6.039 3.32 13.654 1.109 16.977-4.928l37.46-68.103 37.46 68.103a12.51 12.51 0 0 0 10.961 6.478c2.092 0 4.173-.536 6.015-1.55a12.41 12.41 0 0 0 5.98-7.468 12.414 12.414 0 0 0-1.052-9.509l-48.413-88.015a12.5 12.5 0 0 0-21.904 0z"/><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="82.018" y1="-33.353" x2="531.612" y2="408.748"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#c)" d="M486.796 261.736H309.422a2.5 2.5 0 0 0-2.5 2.5v16.731c0 14.209 11.56 25.769 25.769 25.769h70.572a2.5 2.5 0 1 0 0-5h-70.572c-11.452 0-20.769-9.316-20.769-20.769v-14.231h172.375v14.231c0 11.452-9.317 20.769-20.769 20.769H442.07a2.5 2.5 0 1 0 0 5h21.457c14.209 0 25.769-11.56 25.769-25.769v-16.731a2.5 2.5 0 0 0-2.5-2.5z"/><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="106.262" y1="-58.007" x2="555.855" y2="384.094"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#d)" d="m387.157 155.138-48.413 88.015a12.418 12.418 0 0 0-1.052 9.509 12.42 12.42 0 0 0 5.98 7.468 12.44 12.44 0 0 0 6.007 1.554c1.17 0 2.347-.166 3.501-.502a12.422 12.422 0 0 0 7.469-5.979l37.46-68.103 37.46 68.103a12.51 12.51 0 0 0 10.961 6.478c2.092 0 4.173-.536 6.015-1.55a12.41 12.41 0 0 0 5.98-7.468 12.414 12.414 0 0 0-1.052-9.509l-48.413-88.015a12.5 12.5 0 0 0-21.903-.001zm10.952-1.476a7.499 7.499 0 0 1 6.571 3.886l48.413 88.015c.965 1.755 1.189 3.781.631 5.705s-1.833 3.515-3.588 4.48a7.511 7.511 0 0 1-3.605.931 7.509 7.509 0 0 1-6.581-3.888l-39.65-72.085a2.5 2.5 0 0 0-4.38 0l-39.65 72.085a7.449 7.449 0 0 1-4.481 3.588 7.456 7.456 0 0 1-5.706-.631c-1.755-.966-3.029-2.557-3.588-4.48s-.334-3.95.631-5.705l48.413-88.015a7.496 7.496 0 0 1 6.57-3.886z"/><linearGradient id="e" gradientUnits="userSpaceOnUse" x1="24.284" y1="25.36" x2="473.878" y2="467.461"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#e)" d="M420.928 135.256c0-17.421-14.173-31.594-31.593-31.594h-24.822a2.5 2.5 0 1 0 0 5h24.822c14.664 0 26.593 11.93 26.593 26.594 0 4.635-3.771 8.406-8.406 8.406H104.479c-4.635 0-8.406-3.771-8.406-8.406 0-14.664 11.93-26.594 26.593-26.594h101.41l.007.001.009-.001h63.818l.009.001.007-.001h32.105a2.5 2.5 0 1 0 0-5h-28.348a37.654 37.654 0 0 0 2.279-12.961c0-20.932-17.029-37.961-37.961-37.961a37.707 37.707 0 0 0-15.456 3.279 2.5 2.5 0 0 0 2.037 4.567A32.707 32.707 0 0 1 256 57.74c18.175 0 32.961 14.786 32.961 32.961 0 4.515-.897 8.866-2.655 12.961h-60.612a32.636 32.636 0 0 1-2.655-12.961c0-3.289.482-6.535 1.434-9.647a2.498 2.498 0 0 0-1.66-3.121 2.502 2.502 0 0 0-3.122 1.66 37.934 37.934 0 0 0-1.652 11.108c0 4.481.771 8.824 2.28 12.961h-97.653c-17.42 0-31.593 14.173-31.593 31.594 0 7.393 6.014 13.406 13.406 13.406H233.5v259.856h-18.786c-8.173 0-14.822 6.649-14.822 14.822v5.178h-25.178c-8.173 0-14.822 6.649-14.822 14.822v7.678a2.5 2.5 0 0 0 2.5 2.5h187.216a2.5 2.5 0 0 0 2.5-2.5v-7.678c0-8.173-6.649-14.822-14.822-14.822h-25.178v-5.178c0-8.173-6.649-14.822-14.822-14.822H278.5V236.504a2.5 2.5 0 1 0-5 0v172.015h-35V148.662h35v38.322a2.5 2.5 0 1 0 5 0v-38.322h129.022c7.392 0 13.406-6.014 13.406-13.406zm-83.642 298.263c5.416 0 9.822 4.406 9.822 9.822v5.178H164.892v-5.178c0-5.416 4.406-9.822 9.822-9.822h162.572zm-40-20c5.416 0 9.822 4.406 9.822 9.822v5.178H204.892v-5.178c0-5.416 4.406-9.822 9.822-9.822h82.572z"/></svg>
+       
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav  ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="about.html"> about </a>
+                  </li>
+  
+                  <li class="nav-item ">
+                    <a class="nav-link" href="law&jus.html"> Law & Justice</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Laws.html"> LAWS </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html"> Blog </a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+  
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <div class="container" style="margin-top: 150px; margin-bottom:200px ;">
+            <h1>Laws and Justice</h1>
+            
+            <h2>Natural Law Theory</h2>
+            <p>This theory posits that certain rights and values are inherent in nature and can be discerned through reason. It suggests that laws should conform to moral principles derived from natural law, irrespective of human-made legislation.</p>
+            <button class="read-more-btn" onclick="toggleContent('natural-law')">Read More</button>
+            <div id="natural-law" style="display: none;">
+              <div >
+                <h3>Origins and Development:</h3>
+                <p>
+                  <strong>Ancient Greek Roots:</strong> The concept of natural law can be traced back to ancient Greek philosophers such as Aristotle, who believed that there exists a natural order in the universe, and humans should align their actions with this order.
+                </p>
+                <p>
+                  <strong>Stoicism:</strong> The Stoic philosophers further developed the idea of natural law, emphasizing the importance of living in accordance with nature and reason.
+                </p>
+                <p>
+                  <strong>Thomas Aquinas:</strong> In the medieval period, Thomas Aquinas synthesized the ideas of Aristotle with Christian theology. He argued that natural law is derived from God's eternal law and is accessible to humans through reason.
+                </p>
+                
+                <h3>Key Principles:</h3>
+                <p>
+                  <strong>Universal:</strong> Natural law is considered to be universal and applicable to all human beings, regardless of culture, religion, or societal norms.
+                </p>
+                <p>
+                  <strong>Rational Basis:</strong> Natural law is based on reason and rationality. It is believed that humans can discern moral truths through their capacity for rational thought.
+                </p>
+                <p>
+                  <strong>Objective Morality:</strong> Natural law theorists argue that there are objective moral truths that exist independently of human beliefs or conventions.
+                </p>
+                <p>
+                  <strong>Hierarchy of Laws:</strong> Natural law is often seen as hierarchical, with higher laws (such as those governing justice and human rights) taking precedence over lower laws (such as man-made laws).
+                </p>
+                <p>
+                  <strong>Promotion of Human Flourishing:</strong> Natural law theorists assert that adherence to natural law principles leads to human flourishing and fulfillment of one's potential.
+                </p>
+                
+                <h3>Applications:</h3>
+                <p>
+                  <strong>Ethics:</strong> Natural law theory provides a foundation for ethical reasoning, guiding individuals in determining what is morally right or wrong.
+                </p>
+                <p>
+                  <strong>Law and Politics:</strong> Natural law has influenced legal and political thought throughout history. It has been used to critique unjust laws and advocate for legal reforms based on principles of justice and fairness.
+                </p>
+                <p>
+                  <strong>Human Rights:</strong> Many proponents of human rights argue that the principles of natural law underpin the concept of inherent human rights, which cannot be violated by governments or individuals.
+                </p>
+                
+                <h3>Criticisms:</h3>
+                <p>
+                  <strong>Religious Bias:</strong> Critics argue that natural law theory is often intertwined with religious beliefs, making it less accessible to those who do not adhere to a particular religious tradition.
+                </p>
+                <p>
+                  <strong>Cultural Relativity:</strong> Some critics contend that natural law principles may not be universally applicable across different cultures and societies, leading to cultural relativism.
+                </p>
+                <p>
+                  <strong>Complexity and Ambiguity:</strong> The application of natural law principles to specific moral dilemmas or legal issues can be complex and subject to interpretation, leading to ambiguity and disagreement.
+                </p>
+                
+                <h3>Contemporary Relevance:</h3>
+                <p>
+                  <strong>Bioethics:</strong> Natural law theory continues to play a role in debates surrounding bioethical issues such as abortion, euthanasia, and genetic engineering.
+                </p>
+                <p>
+                  <strong>Environmental Ethics:</strong> Natural law principles are also invoked in discussions about environmental ethics and the moral obligations humans have towards the natural world.
+                </p>
+                <p>
+                  <strong>Human Rights Discourse:</strong> Natural law theory contributes to contemporary discussions on human rights, particularly regarding the justification and protection of fundamental rights and freedoms.
+                </p>
+                
+                <p>In conclusion, Natural Law Theory offers a philosophical framework for understanding morality, ethics, and law based on the idea of inherent moral principles derived from nature and reason. Despite its historical roots, it remains a topic of ongoing debate and continues to shape contemporary ethical and legal discourse.</p>
+                
+              </div>
+            </div>
+
+
+
+
+            <h2>Legal Positivism</h2>
+            <p>Legal positivism asserts that the validity of law is based on social conventions and authority rather than moral considerations. According to this theory, laws derive their authority from recognized sources, such as legislation or judicial decisions, regardless of their moral content.</p>
+            <button class="read-more-btn" onclick="toggleContent('legal positivism')">Read More</button>
+            <div id="legal positivism" style="display: none;">
+           <div>  <h3>Origins and Development</h3>
+<p>Legal positivism emerged as a distinct philosophical approach in the 19th century, primarily associated with thinkers like Jeremy Bentham and John Austin. However, its most influential formulation came from the work of the Austrian jurist Hans Kelsen in the early 20th century. Kelsen's Pure Theory of Law provided a systematic framework for understanding law as a hierarchical system of norms.</p>
+
+<h3>Basic Tenets</h3>
+<p>At its core, legal positivism asserts that law is a social construct created by human authority. It suggests that the validity of law is dependent on certain social facts, such as enactment by a legitimate authority or acceptance by the community. According to legal positivists, there is no necessary connection between law and morality; a law can be valid even if it is morally unjust.</p>
+
+<h3>Separation Thesis</h3>
+<p>One of the key ideas within legal positivism is the separation thesis, which argues for a strict separation between law and morality. According to this view, the validity of a legal norm is not contingent on its moral correctness. This separation allows legal positivists to analyze law as a distinct social phenomenon, without needing to reference moral principles.</p>
+
+<h3>Sources of Law</h3>
+<p>Legal positivists identify the sources of law as the commands of a sovereign authority. For Austin, this authority was the sovereign or the political superior, whose commands were backed by the threat of sanctions. Kelsen, on the other hand, proposed the Grundnorm, a hypothetical foundational norm from which all other legal norms derive their validity.</p>
+
+<h3>Critiques</h3>
+<p>Legal positivism has faced several criticisms over the years. One of the primary objections is that it fails to account for the moral dimension of law, leading to potential injustices. Critics argue that by divorcing law from morality, legal positivism overlooks the ethical implications of legal rules and decisions. Additionally, some scholars have criticized the positivist emphasis on formal legality, suggesting that it neglects the role of substantive justice in evaluating legal systems.</p>
+
+<h3>Variants</h3>
+<p>While there are core principles that define legal positivism, there are also variations within the theory. Some legal positivists incorporate elements of moral reasoning into their analysis, known as inclusive legal positivism. Others focus on the internal logic and structure of legal systems, as seen in Kelsen's Pure Theory of Law.</p>
+
+<h3>Contemporary Relevance</h3>
+<p>Legal positivism continues to be a significant theoretical framework within legal philosophy and jurisprudence. Its emphasis on the empirical study of law and the separation of law and morality has influenced legal scholars and practitioners worldwide. However, it remains a subject of ongoing debate and critique, particularly in light of challenges to its foundational assumptions.</p>
+</div> 
+            </div>
+
+
+
+            <h2>Utilitarianism</h2>
+            <p>Utilitarianism holds that laws and justice should aim to maximize overall happiness or utility within society. Decisions regarding laws and justice are made based on their potential to produce the greatest good for the greatest number of people.</p>
+            <button class="read-more-btn" onclick="toggleContent('util')">Read More</button>
+            <div id="util" style="display: none;">
+              <div>
+                
+<h3>Principles of Utilitarianism:</h3>
+<p>
+    <strong>1. Principle of Utility:</strong> The core principle of utilitarianism, also known as the greatest happiness principle, states that actions are right insofar as they promote happiness or pleasure, and wrong as they tend to produce unhappiness or pain.
+</p>
+<p>
+    <strong>2. Consequentialism:</strong> Utilitarianism judges the morality of actions solely based on their outcomes or consequences, rather than on any inherent qualities of the actions themselves.
+</p>
+<p>
+    <strong>3. Hedonism:</strong> Classical utilitarianism is often associated with hedonism, the belief that pleasure or happiness is the highest good and the ultimate aim of human life.
+</p>
+
+<h3>Types of Utilitarianism:</h3>
+<p>
+    <strong>1. Act Utilitarianism:</strong> This form of utilitarianism evaluates each individual action based on its specific consequences. The right action in any situation is the one that maximizes overall happiness, regardless of rules or norms.
+</p>
+<p>
+    <strong>2. Rule Utilitarianism:</strong> Rule utilitarianism emphasizes the importance of following rules or principles that, when universally applied, lead to the greatest overall happiness. It focuses on adherence to rules that promote the greatest good rather than assessing each action individually.
+</p>
+
+<h3>Key Concepts:</h3>
+<p>
+    <strong>1. Pleasure and Pain:</strong> Utilitarianism typically defines happiness in terms of pleasure and unhappiness in terms of pain. The understanding of pleasure and pain may vary, considering factors like quality, duration, and intensity.
+</p>
+<p>
+    <strong>2. Utility Calculus:</strong> Utilitarianism often involves the calculation of utility, which refers to the overall balance of pleasure over pain produced by an action. Predicting and comparing consequences can be challenging.
+</p>
+<p>
+    <strong>3. Impartiality:</strong> Utilitarianism requires making decisions impartially, considering the happiness of all affected individuals equally, without favoritism.
+</p>
+
+<h3>Criticisms of Utilitarianism:</h3>
+<p>
+    <strong>1. Justice and Rights:</strong> Critics argue that utilitarianism sometimes leads to unjust outcomes, prioritizing majority happiness over minority rights or individual liberties.
+</p>
+<p>
+    <strong>2. Difficulty of Measurement:</strong> Quantifying happiness and comparing the utility of different outcomes can be challenging, making utilitarian calculations problematic in practice.
+</p>
+<p>
+    <strong>3. Predictability:</strong> Utilitarianism's focus on consequences may lead to unpredictability, relying on subjective judgments about future outcomes.
+</p>
+<p>
+    <strong>4. Role of Intentions:</strong> Utilitarianism tends to prioritize outcomes over intentions, which some critics see as morally problematic, justifying morally questionable actions if they produce favorable results.
+</p>
+
+<h3>Contemporary Applications:</h3>
+<p>
+    <strong>1. Public Policy:</strong> Utilitarian principles inform public policy decisions in areas such as healthcare, environmental policy, and economics.
+</p>
+<p>
+    <strong>2. Ethical Dilemmas:</strong> Utilitarianism provides a framework for analyzing ethical dilemmas and making decisions that maximize overall welfare.
+</p>
+<p>
+    <strong>3. Business Ethics:</strong> In business ethics, utilitarianism guides decisions regarding corporate social responsibility, resource allocation, and stakeholder interests.
+</p>
+              </div>
+
+            </div>
+
+
+
+            <h2>Retributive Justice</h2>
+            <p>Retributive justice focuses on the punishment of wrongdoing as a form of retribution or moral balance. According to this theory, individuals who violate laws should receive punishment proportionate to the harm caused by their actions, regardless of social utility.</p>
+          <button class="read-more-btn" onclick="toggleContent('Retributive')">Read more</button>
+            <div id="Retributive" style="display: none;">
+              <div>
+                <h3>Key Concepts:</h3>
+<p>
+  1. <strong>Punishment:</strong> Retributive justice emphasizes the idea of punishment as a response to wrongdoing...
+</p>
+<p>
+  2. <strong>Proportionality:</strong> The severity of the punishment should be proportionate to the severity of the crime...
+</p>
+<p>
+  3. <strong>Desert:</strong> Retributive justice is often based on the concept of "just deserts." This means that individuals deserve to be punished...
+</p>
+<p>
+  4. <strong>Deterrence:</strong> While deterrence is not the primary goal of retributive justice, proponents argue that punishment can deter individuals...
+</p>
+<p>
+  5. <strong>Revenge vs. Justice:</strong> Critics of retributive justice often argue that it can resemble revenge...
+</p>
+<p>
+  6. <strong>Fair Process:</strong> Retributive justice requires a fair and impartial legal process to determine guilt and administer punishment...
+</p>
+<p>
+  7. <strong>Limitations:</strong> Critics of retributive justice argue that it can lead to harsh and disproportionate punishments...
+</p>
+
+<h3>Examples:</h3>
+<p>
+  1. <strong>Criminal Justice System:</strong> Many legal systems around the world are based on principles of retributive justice...
+</p>
+<p>
+  2. <strong>Death Penalty:</strong> The death penalty is often cited as an example of retributive justice...
+</p>
+<p>
+  3. <strong>Sentencing Guidelines:</strong> In many legal systems, judges use sentencing guidelines to ensure that punishments are proportional...
+</p>
+<p>
+  4. <strong>Victim Impact Statements:</strong> Some legal systems allow victims or their families to provide impact statements during sentencing hearings...
+</p>
+
+<p>
+  Overall, retributive justice is one of the primary theories of justice in many legal systems, but it is not without its critics and controversies...
+</p>
+              </div>
+
+            </div>
+
+
+
+            <h2>Restorative Justice</h2>
+            <p>Restorative justice emphasizes repairing the harm caused by criminal behavior and restoring relationships between offenders and victims. Instead of focusing solely on punishment, this theory aims to address the root causes of crime and promote reconciliation and healing within communities.</p>
+            <button class="read-more-btn" onclick="toggleContent('Restorative ')">Read more</button>
+            <div id="Restorative " style="display: none;">
+              <div>
+                <h3>Principles of Restorative Justice:</h3>
+<p>
+    Restorative justice prioritizes understanding the harm caused by the offense or conflict. It emphasizes the needs of the victim, offender, and community affected by the wrongdoing.
+</p>
+<p>
+    Restorative justice involves all stakeholders—victims, offenders, and community members—in the process of addressing the harm and finding solutions. Their perspectives and needs are central to the resolution.
+</p>
+<p>
+    Restorative justice holds offenders accountable for their actions by requiring them to take responsibility for the harm they caused and to make amends to the extent possible.
+</p>
+<p>
+    Rather than solely punishing offenders, restorative justice seeks to repair the harm done and promote healing for all parties involved. This may involve restitution, community service, or other actions aimed at restoring relationships and repairing trust.
+</p>
+<p>
+    Restorative justice relies on facilitated dialogue and communication between the parties involved. This allows for understanding, empathy, and the opportunity to address underlying issues that contributed to the harm.
+</p>
+<p>
+    Participation in restorative justice processes is typically voluntary, allowing individuals to choose whether or not to participate. This voluntary nature can contribute to the effectiveness of the process and the willingness of participants to engage fully.
+</p>
+
+<h3>Components of Restorative Justice:</h3>
+<p>
+    Restorative justice involves various components and practices aimed at addressing harm, repairing relationships, and promoting accountability. Some of the key components include:
+</p>
+<ul>
+    <li>Victim-Offender Mediation/Conferencing</li>
+    <li>Community Involvement</li>
+    <li>Restitution and Community Service</li>
+    <li>Circles and Conferences</li>
+    <li>Support and Aftercare</li>
+</ul>
+
+<h3>Applications of Restorative Justice:</h3>
+<p>
+    Restorative justice principles can be applied in various settings and contexts to address harm, promote healing, and build stronger communities. Some common applications include:
+</p>
+<ul>
+    <li>In the Criminal Justice System</li>
+    <li>In Schools and Education</li>
+    <li>In Community and Social Services</li>
+    <li>In Transitional and Post-Conflict Settings</li>
+</ul>
+
+<h3>Criticisms and Challenges:</h3>
+<p>
+    While restorative justice offers many potential benefits, it also faces several criticisms and challenges, including:
+</p>
+<ul>
+    <li>Equity and Power Imbalance</li>
+    <li>Voluntariness and Participation</li>
+    <li>Legal and Procedural Concerns</li>
+    <li>Resource and Capacity Constraints</li>
+    <li>Cultural Sensitivity and Appropriateness</li>
+</ul>
+<p>
+    Despite these challenges, many proponents argue that restorative justice can lead to more meaningful outcomes for victims, offenders, and communities compared to traditional punitive approaches.
+</p>
+
+              </div>
+            </div>
+
+
+
+            <h2>Distributive Justice</h2>
+            <p>Distributive justice concerns the fair allocation of resources, opportunities, and benefits within society. This theory advocates for equitable distribution based on principles of need, merit, or contribution, ensuring that all members of society have access to essential goods and services.</p>
+            <button class="read-more-btn" onclick="toggleContent('Distributive')">Read more</button>
+            <div id="Distributive" style="display: none;">
+              <div>
+                <h3>Theories of Distributive Justice:</h3>
+                <p>
+                1. <strong>Utilitarianism</strong>: Utilitarianism suggests that the distribution of resources should maximize overall happiness or utility in society. In this view, distribution is just if it results in the greatest good for the greatest number of people.<br>
+                2. <strong>Rawlsian Justice</strong>: Proposed by philosopher John Rawls, this theory emphasizes the principle of justice as fairness. Rawls argues for a hypothetical social contract where individuals would agree on principles of justice behind a "veil of ignorance," not knowing their own position in society. This leads to the prioritization of principles like equal basic liberties, fair equality of opportunity, and the difference principle, which allows for inequalities only if they benefit the least advantaged members of society.<br>
+                3. <strong>Libertarianism</strong>: Libertarians argue for minimal government intervention and emphasize individual rights and property rights. In this view, justice is achieved through voluntary exchanges and the protection of property rights, with minimal redistribution.<br>
+                4. <strong>Egalitarianism</strong>: Egalitarians advocate for the equal distribution of resources and opportunities among individuals. This view prioritizes equality as a fundamental principle of justice, aiming to reduce or eliminate socioeconomic inequalities.
+                </p>
+                
+                <h3>Principles of Distributive Justice:</h3>
+                <p>
+                1. <strong>Equality</strong>: Some theories argue for the equal distribution of resources and opportunities among individuals. This can include equal access to education, healthcare, and basic necessities.<br>
+                2. <strong>Need</strong>: Distributive justice based on need prioritizes providing resources to those who are most disadvantaged or in need. This principle aims to ensure that everyone has access to the resources necessary for a decent standard of living.<br>
+                3. <strong>Merit</strong>: Merit-based distribution allocates resources according to individuals' efforts, abilities, or contributions to society. This principle rewards hard work and talent, often justifying inequalities based on individuals' merits.<br>
+                4. <strong>Fairness</strong>: Fair distribution emphasizes processes that are perceived as fair by society. This can include fair procedures for distributing resources, ensuring equal opportunities, and transparency in decision-making.
+                </p>
+                
+                <h3>Application of Distributive Justice:</h3>
+                <p>
+                1. <strong>Income and Wealth Distribution</strong>: Debates about taxation policies, social welfare programs, and minimum wage laws often revolve around principles of distributive justice.<br>
+                2. <strong>Education</strong>: Ensuring equal access to quality education is a key aspect of distributive justice, as education significantly influences individuals' opportunities and life outcomes.<br>
+                3. <strong>Healthcare</strong>: Distributive justice principles are applied in debates about healthcare access, affordability, and the allocation of medical resources.<br>
+                4. <strong>Social Services</strong>: Welfare programs, housing assistance, and other social services are designed to address inequalities and promote distributive justice by providing support to those in need.
+                </p>
+                
+                <h3>Criticisms and Challenges:</h3>
+                <p>
+                1. <strong>Efficiency vs. Equity</strong>: Distributive justice principles sometimes conflict with economic efficiency, leading to debates about the trade-offs between equity and productivity.<br>
+                2. <strong>Complexity of Needs</strong>: Determining how resources should be distributed to meet individuals' diverse needs can be challenging, as people have different requirements and circumstances.<br>
+                3. <strong>Incentives and Motivation</strong>: Critics argue that excessive redistribution may undermine incentives for productivity and innovation, leading to concerns about the sustainability of redistributive policies.<br>
+                4. <strong>Cultural and Political Differences</strong>: Different societies may have varying interpretations of what constitutes a just distribution, leading to cultural and political conflicts over distributive justice policies.
+                </p>
+                
+                <p>In conclusion, distributive justice is a complex and multifaceted concept that plays a central role in discussions about fairness, equality, and social welfare. It encompasses various theories, principles, and applications, reflecting the diverse values and priorities of different societies.</p>
+                
+              </div>
+            </div>
+
+
+
+
+            <h2>Procedural Justice</h2>
+            <p>Procedural justice emphasizes fair and impartial processes in the administration of law and justice. It focuses on ensuring that legal procedures are transparent, consistent, and accessible to all, regardless of individual characteristics or social status.</p>
+            <button class="read-more-btn" onclick="toggleContent('Procedural')">Read more</button>
+            <div id="Procedural" style="display: none;">
+              <div>
+                <h3>Procedural Justice</h3>
+
+                <p>Procedural justice is a concept within the realm of social psychology and legal theory that concerns the fairness and transparency of the processes by which decisions are made and implemented. It revolves around the idea that individuals are more likely to accept outcomes, even unfavorable ones, if they perceive the procedures used to reach those outcomes as fair. This concept has profound implications across various domains, including law, governance, organizational behavior, and interpersonal relationships.</p>
+                
+                <h3>Key Aspects and Implications</h3>
+                
+                <p><strong>1. Fair Procedures:</strong> Procedural justice emphasizes the importance of fair procedures in decision-making. These procedures typically include aspects such as transparency, consistency, impartiality, and opportunities for voice and participation.</p>
+                
+                <p><strong>2. Perceptions of Fairness:</strong> Central to procedural justice theory is the idea that individuals' perceptions of fairness matter more than objective measures of fairness. Even if an outcome seems unfavorable, people are more likely to accept it if they perceive the procedures leading to that outcome as fair.</p>
+                
+                <p><strong>3. Trust and Legitimacy:</strong> Fair procedures enhance trust in authorities and institutions. When individuals believe that decision-makers are fair and unbiased, they are more likely to comply with decisions, cooperate with authorities, and view institutions as legitimate.</p>
+                
+                <p><strong>4. Impact on Behavior:</strong> Research has shown that perceptions of procedural justice influence individuals' behavior. People are more likely to obey the law, follow organizational rules, and adhere to social norms when they perceive the processes governing these rules as fair.</p>
+                
+                <p><strong>5. Application in Legal Contexts:</strong> In the legal system, procedural justice is critical for ensuring that individuals perceive the legal process as fair, regardless of the outcome of their cases. Elements such as a fair trial, access to legal representation, and opportunities to present evidence contribute to perceptions of procedural justice.</p>
+                
+                <p><strong>6. Policing and Law Enforcement:</strong> Procedural justice principles are relevant to policing practices. Fair and respectful treatment by law enforcement officers, along with transparent and accountable procedures, can enhance public trust in the police and contribute to positive police-community relations.</p>
+                
+                <p><strong>7. Organizational Behavior:</strong> Within organizations, procedural justice influences employee attitudes, behaviors, and performance. Fair procedures in areas such as performance evaluations, promotions, and dispute resolution can foster a positive organizational climate and employee satisfaction.</p>
+                
+                <p><strong>8. Leadership and Decision-Making:</strong> Leaders who prioritize procedural justice in their decision-making processes are more likely to gain the trust and support of their followers. Consulting stakeholders, providing explanations for decisions, and ensuring transparency can enhance perceptions of fairness in leadership.</p>
+                
+                <p><strong>9. Social Equity:</strong> Procedural justice is closely linked to the concept of social equity. Fair procedures help mitigate inequalities by ensuring that decision-making processes are transparent, consistent, and inclusive, thus reducing the likelihood of discrimination or bias.</p>
+                
+                <p><strong>10. Intergroup Relations:</strong> Procedural justice has implications for intergroup relations, including those based on factors such as race, ethnicity, gender, or socioeconomic status. Fair procedures can help bridge divides between different social groups by promoting a sense of fairness and equality.</p>
+                
+                <p>Overall, procedural justice serves as a foundational principle for fostering trust, cooperation, and social cohesion in various contexts. By prioritizing fair procedures, individuals, organizations, and institutions can promote positive outcomes and mitigate conflict and mistrust.</p>
+                
+              </div>
+            </div>
+
+
+
+
+
+            <h2>Social Justice</h2>
+            <p>Social justice aims to address systemic inequalities and promote fairness and equality in society. This theory advocates for policies and laws that seek to eliminate discrimination, oppression, and marginalization, ensuring equal rights and opportunities for all individuals.</p>
+            <button class="read-more-btn" onclick="toggleContent('Social')">Read more</button>
+            <div id="Social" style="display: none;">
+              <div>
+                <h3>Social Justice Overview</h3>
+                <p>Social justice is a complex and multifaceted concept that encompasses a wide range of ideas, movements, and practices aimed at achieving equality, fairness, and equity in society. It addresses issues such as poverty, inequality, discrimination, and oppression based on factors like race, gender, sexual orientation, socioeconomic status, disability, and more. Here's a breakdown of various aspects of social justice:</p>
+                
+                <h3>1. Equality vs. Equity</h3>
+                <p>Social justice often distinguishes between equality and equity. While equality implies treating everyone the same, equity recognizes that individuals have different needs and circumstances and aims to provide resources and opportunities accordingly. For example, providing extra support or accommodations to marginalized groups to ensure they have equal access to opportunities.</p>
+                
+                <h3>2. Intersectionality</h3>
+                <p>Coined by Kimberlé Crenshaw, intersectionality highlights how various aspects of identity (such as race, gender, class, sexuality, disability, etc.) intersect and interact with each other, leading to unique forms of discrimination and oppression. Intersectional approaches to social justice consider these overlapping identities and experiences to address systemic inequalities comprehensively.</p>
+                
+                <h3>3. Systemic Injustice</h3>
+                <p>Social justice advocates often focus on addressing systemic injustices—deep-rooted inequalities embedded within social, economic, and political structures. This includes discriminatory laws and policies, unequal distribution of resources, and cultural norms that perpetuate oppression and marginalization.</p>
+                
+                <h3>4. Human Rights</h3>
+                <p>Social justice is closely aligned with the concept of human rights, which asserts that all individuals are entitled to certain fundamental rights and freedoms, regardless of their background or identity. Promoting social justice involves advocating for the protection and realization of these rights for everyone.</p>
+                
+                <h3>5. Social Movements</h3>
+                <p>Throughout history, social justice movements have emerged to challenge various forms of oppression and advocate for change. Examples include the civil rights movement, feminist movement, LGBTQ+ rights movement, disability rights movement, environmental justice movement, and more. These movements often use tactics such as protests, activism, advocacy, community organizing, and legal action to bring about social change.</p>
+                
+                <h3>6. Policy and Advocacy</h3>
+                <p>Social justice efforts extend to influencing government policies and practices to address systemic inequalities. This includes advocating for policies that promote equality, such as affirmative action, anti-discrimination laws, living wage laws, universal healthcare, affordable housing initiatives, and criminal justice reform.</p>
+                
+                <h3>7. Education and Awareness</h3>
+                <p>Educating individuals and raising awareness about social justice issues is also a crucial aspect of the movement. This involves teaching about privilege, oppression, allyship, and the historical and contemporary factors contributing to inequality. Education can empower people to recognize and challenge injustice in their communities.</p>
+                
+                <h3>8. Economic Justice</h3>
+                <p>Economic inequality is a central concern of social justice, as it often intersects with other forms of oppression. Addressing economic injustice involves advocating for fair wages, wealth redistribution, access to education and healthcare, affordable housing, and other economic reforms to ensure that everyone has the opportunity to thrive.</p>
+                
+                <h3>9. Environmental Justice</h3>
+                <p>Environmental justice is concerned with the fair treatment and meaningful involvement of all people, regardless of race, ethnicity, or income, in environmental decision-making. This includes addressing environmental racism, pollution in marginalized communities, and the disproportionate impacts of climate change on vulnerable populations.</p>
+                
+                <h3>10. Global Perspective</h3>
+                <p>Social justice is not limited to any one country or region; it is a global endeavor. Issues such as global poverty, migration, imperialism, colonialism, and exploitation require international cooperation and solidarity to address effectively.</p>
+                
+                <p>Overall, social justice is a broad and dynamic field that encompasses a wide range of issues and approaches aimed at creating a more just, equitable, and inclusive society for all individuals. It requires ongoing effort, dialogue, and collective action to address the complex and interconnected forms of oppression and inequality present in our world.</p>
+                
+              </div>
+            </div>
+
+
+          
+          </div>
+      </main>
+
+
+     
+
+      <section class="info_section" style="margin-top: 50px; background-color: #2a2a2c;">
+        <div class="container " style="background-color:  #2a2a2c;">
+          <div class="row custom_border-btm pb-4">
+            <div class="col-md-4 info_logo">
+               <svg  style="height: 70px; width: 70px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-57.703" y1="108.736" x2="391.891" y2="550.837"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#a)" d="M205.078 280.968v-16.731a2.5 2.5 0 0 0-2.5-2.5H25.204a2.5 2.5 0 0 0-2.5 2.5v16.731c0 14.209 11.56 25.769 25.769 25.769h130.836c14.209-.001 25.769-11.56 25.769-25.769zm-177.374 0v-14.231h172.375v14.231c0 11.452-9.317 20.769-20.769 20.769H48.473c-11.452-.001-20.769-9.317-20.769-20.769z"/><linearGradient id="b" gradientUnits="userSpaceOnUse" x1="-33.459" y1="84.082" x2="416.135" y2="526.182"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#b)" d="m102.939 155.138-10.108 18.376a2.5 2.5 0 0 0 4.381 2.411l10.108-18.376a7.5 7.5 0 0 1 13.142 0l48.413 88.015c.965 1.755 1.189 3.781.631 5.705s-1.833 3.515-3.588 4.48a7.511 7.511 0 0 1-3.605.931 7.509 7.509 0 0 1-6.581-3.888l-39.65-72.085a2.5 2.5 0 0 0-4.38 0l-39.65 72.085c-1.994 3.624-6.564 4.95-10.187 2.957-1.755-.966-3.029-2.557-3.588-4.48s-.334-3.95.631-5.705l21.555-39.187a2.5 2.5 0 0 0-4.381-2.411l-21.555 39.187a12.418 12.418 0 0 0-1.052 9.509 12.42 12.42 0 0 0 5.98 7.468c6.039 3.32 13.654 1.109 16.977-4.928l37.46-68.103 37.46 68.103a12.51 12.51 0 0 0 10.961 6.478c2.092 0 4.173-.536 6.015-1.55a12.41 12.41 0 0 0 5.98-7.468 12.414 12.414 0 0 0-1.052-9.509l-48.413-88.015a12.5 12.5 0 0 0-21.904 0z"/><linearGradient id="c" gradientUnits="userSpaceOnUse" x1="82.018" y1="-33.353" x2="531.612" y2="408.748"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#c)" d="M486.796 261.736H309.422a2.5 2.5 0 0 0-2.5 2.5v16.731c0 14.209 11.56 25.769 25.769 25.769h70.572a2.5 2.5 0 1 0 0-5h-70.572c-11.452 0-20.769-9.316-20.769-20.769v-14.231h172.375v14.231c0 11.452-9.317 20.769-20.769 20.769H442.07a2.5 2.5 0 1 0 0 5h21.457c14.209 0 25.769-11.56 25.769-25.769v-16.731a2.5 2.5 0 0 0-2.5-2.5z"/><linearGradient id="d" gradientUnits="userSpaceOnUse" x1="106.262" y1="-58.007" x2="555.855" y2="384.094"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#d)" d="m387.157 155.138-48.413 88.015a12.418 12.418 0 0 0-1.052 9.509 12.42 12.42 0 0 0 5.98 7.468 12.44 12.44 0 0 0 6.007 1.554c1.17 0 2.347-.166 3.501-.502a12.422 12.422 0 0 0 7.469-5.979l37.46-68.103 37.46 68.103a12.51 12.51 0 0 0 10.961 6.478c2.092 0 4.173-.536 6.015-1.55a12.41 12.41 0 0 0 5.98-7.468 12.414 12.414 0 0 0-1.052-9.509l-48.413-88.015a12.5 12.5 0 0 0-21.903-.001zm10.952-1.476a7.499 7.499 0 0 1 6.571 3.886l48.413 88.015c.965 1.755 1.189 3.781.631 5.705s-1.833 3.515-3.588 4.48a7.511 7.511 0 0 1-3.605.931 7.509 7.509 0 0 1-6.581-3.888l-39.65-72.085a2.5 2.5 0 0 0-4.38 0l-39.65 72.085a7.449 7.449 0 0 1-4.481 3.588 7.456 7.456 0 0 1-5.706-.631c-1.755-.966-3.029-2.557-3.588-4.48s-.334-3.95.631-5.705l48.413-88.015a7.496 7.496 0 0 1 6.57-3.886z"/><linearGradient id="e" gradientUnits="userSpaceOnUse" x1="24.284" y1="25.36" x2="473.878" y2="467.461"><stop offset="0" style="stop-color:#fef050"/><stop offset=".035" style="stop-color:#fae73d"/><stop offset=".093" style="stop-color:#f5db22"/><stop offset=".154" style="stop-color:#f2d20f"/><stop offset=".215" style="stop-color:#f0cd04"/><stop offset=".281" style="stop-color:#efcb00"/><stop offset=".668" style="stop-color:#d99544"/><stop offset=".888" style="stop-color:#cd6f3c"/><stop offset="1" style="stop-color:#c34435"/></linearGradient><path style="fill:url(#e)" d="M420.928 135.256c0-17.421-14.173-31.594-31.593-31.594h-24.822a2.5 2.5 0 1 0 0 5h24.822c14.664 0 26.593 11.93 26.593 26.594 0 4.635-3.771 8.406-8.406 8.406H104.479c-4.635 0-8.406-3.771-8.406-8.406 0-14.664 11.93-26.594 26.593-26.594h101.41l.007.001.009-.001h63.818l.009.001.007-.001h32.105a2.5 2.5 0 1 0 0-5h-28.348a37.654 37.654 0 0 0 2.279-12.961c0-20.932-17.029-37.961-37.961-37.961a37.707 37.707 0 0 0-15.456 3.279 2.5 2.5 0 0 0 2.037 4.567A32.707 32.707 0 0 1 256 57.74c18.175 0 32.961 14.786 32.961 32.961 0 4.515-.897 8.866-2.655 12.961h-60.612a32.636 32.636 0 0 1-2.655-12.961c0-3.289.482-6.535 1.434-9.647a2.498 2.498 0 0 0-1.66-3.121 2.502 2.502 0 0 0-3.122 1.66 37.934 37.934 0 0 0-1.652 11.108c0 4.481.771 8.824 2.28 12.961h-97.653c-17.42 0-31.593 14.173-31.593 31.594 0 7.393 6.014 13.406 13.406 13.406H233.5v259.856h-18.786c-8.173 0-14.822 6.649-14.822 14.822v5.178h-25.178c-8.173 0-14.822 6.649-14.822 14.822v7.678a2.5 2.5 0 0 0 2.5 2.5h187.216a2.5 2.5 0 0 0 2.5-2.5v-7.678c0-8.173-6.649-14.822-14.822-14.822h-25.178v-5.178c0-8.173-6.649-14.822-14.822-14.822H278.5V236.504a2.5 2.5 0 1 0-5 0v172.015h-35V148.662h35v38.322a2.5 2.5 0 1 0 5 0v-38.322h129.022c7.392 0 13.406-6.014 13.406-13.406zm-83.642 298.263c5.416 0 9.822 4.406 9.822 9.822v5.178H164.892v-5.178c0-5.416 4.406-9.822 9.822-9.822h162.572zm-40-20c5.416 0 9.822 4.406 9.822 9.822v5.178H204.892v-5.178c0-5.416 4.406-9.822 9.822-9.822h82.572z"/></svg>
+       
+              <p>
+                  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or 
+              </p>
+            </div>
+            <div class="col-md-4 info_address">
+              <h5>
+                Section
+              </h5>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="law&jus.html">Laws and Justice</a></li>
+              <li><a href="Laws.html">Laws</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </div>
+            <div class="col-md-4 info_news">
+              <h5>
+                Feedback
+              </h5>
+              <form action="">
+                <div>
+                  <input type="email" placeholder="Enter your FeedBack">
+                </div>
+                <div>
+                  <button type="submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+    
+          </div>
+        
+          <div>
+            <div class="info_social">
+              <div>
+               <a href="">
+                  <img src="images/fb.png" alt="">
+               </a>
+              </div>
+              <div>
+               <a href="">
+                  <img src="images/twitter.png" alt="">
+               </a>
+              </div>
+              <div>
+               <a href="">
+                  <img src="images/linkedin.png" alt="">
+               </a>
+              </div>
+              <div>
+                <a href="">
+                    <img src="images/insta.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="container-fluid footer_section">
+            <p>
+              Copyright &copy; 2024 All Rights Reserved By
+              <a href="https://html.design/"></a>
+            </p>
+          </section>
+     
+
+
+
+          <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+          <script type="text/javascript" src="js/bootstrap.js"></script>
+          <script>
+            function toggleContent(sectionId) {
+    var content = document.getElementById(sectionId);
+    var button = document.querySelector(`#${sectionId} + .read-more-btn`);
+    
+    if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        button.textContent = 'Read Less';
+    } else {
+        content.style.display = "none";
+        button.textContent = 'Read More';
+    }
+}
+
+         /* function toggleContent(sectionId) {
+          var content = document.getElementById(sectionId);
+          var button = document.querySelector(`#${sectionId} + .read-more-btn`);
+          if (content.style.display === "none" || content.style.display === "") {
+              content.style.display = "block";
+              button.textContent = 'Read less';
+          } else {
+              content.style.display = "none";
+              button.textContent = 'Read more';
+          }
+      } */
+          
+          
+          /* document.getElementById('read-more-btn').addEventListener('click', function() {
+              var additionalContent = document.getElementById('additional-content');
+              var button = document.getElementById('read-more-btn');
+          
+              if (additionalContent.style.display === 'none') {
+                additionalContent.style.display = 'block';
+                button.textContent = 'Read Less';
+              } else {
+                additionalContent.style.display = 'none';
+                button.textContent = 'Read More';
+              }
+            });  */$
+          </script>
+</body>
+</html>
